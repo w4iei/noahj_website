@@ -2,24 +2,28 @@
 layout: page
 permalink: /productions/
 title: concerts
-description: Concert production, musical initiatives, and related organizational work.
+description: Selected concert production and organizational work.
 nav: true
 nav_order: 3
 ---
 
-This page covers selected concert production and related organizational work.
+## concert production
 
-## Concert Production
+### Stichting Tijdloze Klavieren
 
-**Artem Belogurov plays Mozart Piano Sonatas on a 1783 Stein**  
+Stichting Tijdloze Klavieren produces historically informed concerts centered on keyboard instruments and their repertories.
+
+**Artem Belogurov plays Mozart Piano Sonatas on a 1783 Stein Fortepiano**  
 Het Concertgebouw Amsterdam (Kleine Zaal), May 1, 2026
 
-Produced as Executive \& Artistic Director of Stichting Tijdloze Klavieren ([AmsterdamEarlyMusic.com](https://amsterdamearlymusic.com)). I handled venue booking, artistic planning, production coordination, marketing, and concert presentation.
+The organisation's debut concert. Conceived, planned, and produced. See also [AmsterdamEarlyMusic.com](https://amsterdamearlymusic.com).
 
-## Initiatives and Service
+## other concert-related work
 
-**Musicians @ Apple (Employee Recital Series)**  
-Founded and organized an employee recital series at Apple, 2015-2018. This included planning concerts and organizing performances by employee musicians within the company.
+### Musicians @ Apple (Employee Recital Series)
 
-**Winchester Orchestra of San Jose**  
+Apple, 2015-2018. Founded and organized an employee recital series, planning concerts and coordinating performances by employee musicians.
+
+### [Winchester Orchestra of San Jose](https://www.winchesterorchestra.com/about/)
+
 Board member (Secretary), 2017-2018.
