@@ -23,8 +23,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-concert-production",
-          title: "Concert Production",
+        },{id: "nav-concerts",
+          title: "Concerts",
           description: "Concerts and initiatives that I have organized and produced, including artistic planning and production.",
           section: "Navigation",
           handler: () => {
