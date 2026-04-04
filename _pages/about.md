@@ -24,9 +24,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a PhD researcher and engineer developing new sensing, measurement, and computational tools for complex physical systems, with a particular focus on historical keyboard instruments.
-I am part of the [Music Cognition Group](https://www.mcg.uva.nl/), which is part of the Institute for Logic, Language and Computation at the University of Amsterdam.
-My work centers on projects involving historical keyboard instruments and technology, building systems that make instruments newly measurable, playable, and interpretable, while opening up new possibilities for performance, research, and digital instrument design.
+I am a PhD researcher and engineer developing new sensing, measurement, and computational tools for complex physical systems, with a particular focus on historical keyboard instruments.  
+I am part of the [Music Cognition Group](https://www.mcg.uva.nl/), within the Institute for Logic, Language and Computation at the University of Amsterdam.  
+Within MIR and audio, my work includes instrument sensing systems, source separation, hyperinstruments, human listening studies, and the evaluation of machine learning models against human perception.
 
 Before beginning my PhD, I worked at Apple on iPhone RF front-end systems and the Python-based tooling used to model, validate, and debug them from prototyping through production bring-up.
 That engineering background continues to shape my approach to musical and cultural problems that demand precision, robustness, and close attention to the behavior of real physical systems.
