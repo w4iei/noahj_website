@@ -1,189 +1,137 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Noah Jaffe
+  label: PhD Researcher, Musicologist, and Hardware/Software Engineer
+  location: Amsterdam, The Netherlands
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
-
-  social_networks:
-    - network: X
-      username: AlbertEinstein
-    - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
+  summary: Noah Jaffe is a PhD researcher, musicologist, and instrument developer working at the intersection of historical keyboard instruments, artistic research, and digital instrument design. His background combines engineering, computational musicology, and analytical tools for complex cultural data.
 
   address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+    city: Amsterdam
+    region: The Netherlands
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+      - institution: University of Amsterdam, Institute for Logic, Language and Computation (ILLC)
+        location: Amsterdam, The Netherlands
+        area: Computational Musicology
+        studyType: Ph.D. (in progress)
+        start_date: 2024
+        end_date: 2028
         highlights:
-          - Description 1.
-          - Description 2.
+          - Research on historical keyboard performance and the development of non-invasive sensing systems for harpsichords and early pianos.
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: University of Amsterdam
+        location: Amsterdam, The Netherlands
+        area: Musicology
+        studyType: M.A.
+        start_date: 2021
+        end_date: 2022
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Thesis: *Musical Source Separation: WSDR---Lending Weight to SDR*"
+
+      - institution: Georgia Institute of Technology
+        location: Atlanta, Georgia, US
+        area: Electrical Engineering
+        studyType: B.S.
+        start_date: 2009
+        end_date: 2013
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: Institute for Logic, Language and Computation (ILLC), University of Amsterdam
+        position: PhD Researcher
+        location: Amsterdam, The Netherlands
+        start_date: 2024
+        end_date: Present
+        summary: Research on historical keyboard performance and the development of non-invasive sensing systems for harpsichords and early pianos.
         highlights:
-          - Relativity
-          - Description 2.
+          - "Developer of the **PHOTON** system: a modular optical sensing platform enabling high-resolution performance capture for research and concert applications."
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: klavecimbel.com
+        position: Founder & Engineer
+        location: Amsterdam, The Netherlands
+        start_date: 2024
+        end_date: Present
         highlights:
-          - Description 1.
-          - Description 2.
+          - Developed a Raspberry Pi-based Pianoteq retrofit enabling historically informed keyboard sounds on existing MIDI keyboards.
+          - Created the PHOTON retrofit for acoustic historical keyboard instruments, including custom sensor boards, PCBs, and embedded systems to produce MIDI output.
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - company: Stichting Tijdloze Klavieren
+        position: Executive & Artistic Director
+        location: Amsterdam, The Netherlands
+        start_date: 2024
+        end_date: Present
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - Founder and director of a foundation producing historically informed harpsichord and fortepiano concerts.
+          - Lead artistic programming, collaborations, fundraising, and development of instrument-centered performance formats.
+          - Built AmsterdamEarlyMusic.com, a community-driven early music calendar for Amsterdam with user-submitted listings.
 
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+      - company: Apple Inc.
+        position: Hardware and Software Engineer, Wireless Hardware Engineering
+        location: Cupertino, California, US
+        start_date: 2013
+        end_date: 2020
+        summary: Eight years at Apple developing iPhone wireless communication hardware and related test infrastructure.
+        highlights:
+          - Led bench debugging and analysis during prototyping and factory bring-up.
+          - Developed Python-based RF test automation for characterization and production validation, including bench control, path-loss calibration, and 3GPP LTE-aligned test procedures.
+          - Built internal RF analytics and visualization tools used across multiple iPhone product lines to diagnose radio performance issues and communicate regressions to engineering leadership.
+          - Developed an XML-based modeling system representing the complete iPhone RF front-end (PAs, switches, duplexers, LNAs), generating RFFE configuration profiles integrated directly into production firmware.
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+      - company: Apple Inc.
+        position: Wireless Hardware Engineering Intern
+        location: Cupertino, California, US
+        start_date: 2012
+        end_date: 2012
+        highlights:
+          - Developed factory test software for antenna validation using vector network analyzers (VNAs) and automated measurement workflows.
+          - Built a macOS Cocoa application in Objective-C for production test control, data collection, and pass/fail reporting in manufacturing environments.
+
+      - company: Research In Motion (BlackBerry)
+        position: Wireless Hardware Engineering Intern
+        location: Sunrise, Florida, US
+        start_date: 2011
+        end_date: 2011
+        highlights:
+          - Performed receiver sensitivity and desense testing for GSM/WCDMA devices, investigating RF performance degradation due to EMI and digital noise coupling.
+          - Implemented mitigations via drive-strength tuning, shielding and grounding changes, and board-level coupling investigations.
 
     Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+      - title: "Musical Source Separation Bake-Off: Comparing Objective Metrics with Human Perception"
+        publisher: Proceedings of the IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)
+        releaseDate: 2025-11-14
+        url: https://arxiv.org/abs/2507.06917
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+      - title: "PHOTON: Non-Invasive Optical Tracking of Key-Lever Motion in Historical Keyboard Instruments"
+        publisher: Proceedings of the International Conference on New Interfaces for Musical Expression (NIME)
+        releaseDate: 2026
+        summary: Accepted for publication
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+      - title: "The Portable Harpsichord: Past and Present"
+        publisher: "Harpsichord & fortepiano Magazine"
+        releaseDate: 2026
+        summary: Under review
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: RF and hardware systems
+        keywords:
+          - RF systems debugging
+          - bench characterization
+          - factory bring-up
 
-    Languages:
-      - name: German
-        summary: "Native speaker"
+      - name: Software and analysis
+        keywords:
+          - Python-based test automation
+          - analytics tooling
+          - data visualization
 
-      - name: English
-        summary: "Fluent"
+      - name: Embedded systems
+        keywords:
+          - RFFE configuration modeling
+          - firmware integration workflows
+          - custom sensor boards and PCBs
 
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Research instruments
+        keywords:
+          - historical keyboard instrument sensing systems
+          - research prototyping
+          - multimodal performance data
