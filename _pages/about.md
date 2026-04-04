@@ -28,7 +28,7 @@ I am a PhD researcher and engineer developing new sensing, measurement, and comp
 I am part of the [Music Cognition Group](https://www.mcg.uva.nl/), which is part of the Institute for Logic, Language and Computation at the University of Amsterdam.
 My work centers on projects involving historical keyboard instruments and technology, building systems that make instruments newly measurable, playable, and interpretable, while opening up new possibilities for performance, research, and digital instrument design.
 
-Before beginning my PhD at the Institute for Logic, Language and Computation (UvA), I spent eight years at Apple as an RF hardware engineer, where I built Python-based tooling and test infrastructure and contributed to the modeling, validation, and production bring-up of cellular RF front-end systems.
+Before beginning my PhD, I worked at Apple on iPhone RF front-end systems and the Python-based tooling used to model, validate, and debug them from prototyping through production bring-up.
 That engineering background continues to shape my approach to musical and cultural problems that demand precision, robustness, and close attention to the behavior of real physical systems.
 
 Current work includes [**PHOTON**](https://github.com/w4iei/PHOTON), a non-invasive optical sensing platform for historical keyboard instruments, [**klavecimbel.com**](https://klavecimbel.com), and [**AmsterdamEarlyMusic.com**](https://amsterdamearlymusic.com), as well as other projects involving historical keyboards, musical interfaces, and instrument-centered technology.
