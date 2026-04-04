@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /productions/
-title: Concerts
+title: concerts
 description: Concerts and initiatives that I have organized and produced, including artistic planning and production.
 nav: true
 nav_order: 3
@@ -22,4 +22,4 @@ Apple, 2015-2018. Founded and organized an employee recital series, planning con
 
 ## [Winchester Orchestra of San Jose](https://www.winchesterorchestra.com/about/)
 
-Board member (Secretary), 2017-2018.
+Secretary, 2017-2018.
