@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /productions/
-title: concerts
+title: Concerts
 description: Concerts and initiatives that I have organized and produced, including artistic planning and production.
 nav: true
 nav_order: 3
@@ -13,7 +13,7 @@ Stichting Tijdloze Klavieren produces concerts centered on historical keyboard i
 See [AmsterdamEarlyMusic.com](https://amsterdamearlymusic.com).
 
 #### Artem Belogurov plays Mozart Piano Sonatas on a 1783 Stein Fortepiano
-Het Concertgebouw Amsterdam (Kleine Zaal), May 1, 2026
+May 1st, 2026, Het Concertgebouw Amsterdam (Kleine Zaal)  
 The organisation's debut concert. Conceived, programmed, and produced, including securing the venue and establishing a working relationship with the Concertgebouw.
 
 ## Musicians @ Apple

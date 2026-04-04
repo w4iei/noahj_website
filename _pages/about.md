@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: PhD researcher, musicologist, and hardware/software engineer in Amsterdam.
 
