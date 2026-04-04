@@ -23,9 +23,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-concerts",
-          title: "concerts",
-          description: "Selected concert production and organizational work.",
+        },{id: "nav-concert-production",
+          title: "Concert Production",
+          description: "Concerts and initiatives that I have organized and produced, including artistic planning and production.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/productions/";
