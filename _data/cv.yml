@@ -1,12 +1,9 @@
 cv:
   name: Noah Jaffe
-  label: Systems Engineer, Instrument Developer, and Researcher
-  location: Amsterdam
+  label: Systems Engineer and Researcher
+  location: Amsterdam, The Netherlands
   image: ""
   summary: Noah Jaffe works across sensing, embedded systems, measurement, and historical keyboard instruments. His background combines hardware engineering, computational analysis, and instrument-centered research, with a focus on building systems that make complex physical behavior measurable, interpretable, and usable in performance.
-
-  address:
-    city: Amsterdam
 
   sections:
     Education:
