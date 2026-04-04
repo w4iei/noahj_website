@@ -1,9 +1,9 @@
 cv:
   name: Noah Jaffe
-  label: PhD Researcher, Musicologist, and Hardware/Software Engineer
+  label: Systems Engineer, Instrument Developer, and Researcher
   location: Amsterdam
   image: ""
-  summary: Noah Jaffe is a PhD researcher, musicologist, and instrument developer working at the intersection of historical keyboard instruments, artistic research, and digital instrument design. His background combines engineering, computational musicology, and analytical tools for complex cultural data.
+  summary: Noah Jaffe works across sensing, embedded systems, measurement, and historical keyboard instruments. His background combines hardware engineering, computational analysis, and instrument-centered research, with a focus on building systems that make complex physical behavior measurable, interpretable, and usable in performance.
 
   address:
     city: Amsterdam
@@ -41,40 +41,40 @@ cv:
         location: Amsterdam
         start_date: 2024
         end_date: Present
-        summary: Research on historical keyboard performance and the development of non-invasive sensing systems for harpsichords and early pianos.
+        summary: Researches historical keyboard performance and develops non-invasive sensing systems for harpsichords and early pianos.
         highlights:
-          - "Developer of the **PHOTON** system: a modular optical sensing platform enabling high-resolution performance capture for research and concert applications."
+          - "Developed **PHOTON**, a modular optical sensing platform for high-resolution performance capture in research and concert settings."
 
       - company: klavecimbel.com
         position: Founder & Engineer
         location: Amsterdam
         start_date: 2024
         end_date: Present
+        summary: Develops software and hardware systems for historical keyboard instruments.
         highlights:
-          - Developed a Raspberry Pi-based Pianoteq retrofit enabling historically informed keyboard sounds on existing MIDI keyboards.
-          - Created the PHOTON retrofit for acoustic historical keyboard instruments, including custom sensor boards, PCBs, and embedded systems to produce MIDI output.
+          - Built a Raspberry Pi-based Pianoteq retrofit for modern MIDI keyboards oriented toward historically informed keyboard performance.
+          - Designed the PHOTON retrofit for acoustic historical keyboard instruments, including optical sensing hardware, custom PCBs, and embedded systems for performance capture and MIDI output.
 
       - company: Stichting Tijdloze Klavieren
         position: Executive & Artistic Director
         location: Amsterdam
         start_date: 2024
         end_date: Present
+        summary: Directs a foundation focused on historically informed keyboard performance and instrument-centered concert programming.
         highlights:
-          - Founder and director of a foundation producing historically informed harpsichord and fortepiano concerts.
-          - Lead artistic programming, collaborations, fundraising, and development of instrument-centered performance formats.
-          - Built AmsterdamEarlyMusic.com, a community-driven early music calendar for Amsterdam with user-submitted listings.
+          - Leads artistic programming, collaborations, fundraising, and the development of new performance formats for harpsichord and fortepiano.
+          - Built and maintains AmsterdamEarlyMusic.com, a public calendar and submission platform for Amsterdam's early music scene.
 
       - company: Apple Inc.
         position: Hardware and Software Engineer, Wireless Hardware Engineering
         location: Cupertino, California
         start_date: 2013
         end_date: 2020
-        summary: Eight years at Apple developing iPhone wireless communication hardware and related test infrastructure.
+        summary: Worked on iPhone RF front-end systems and the Python-based tooling used to model, validate, and debug them from prototyping through production bring-up.
         highlights:
-          - Led bench debugging and analysis during prototyping and factory bring-up.
-          - Developed Python-based RF test automation for characterization and production validation, including bench control, path-loss calibration, and 3GPP LTE-aligned test procedures.
-          - Built internal RF analytics and visualization tools used across multiple iPhone product lines to diagnose radio performance issues and communicate regressions to engineering leadership.
-          - Developed an XML-based modeling system representing the complete iPhone RF front-end (PAs, switches, duplexers, LNAs), generating RFFE configuration profiles integrated directly into production firmware.
+          - Developed Python test and analysis infrastructure for RF characterization and production validation, including instrument control, calibration, and automated measurement workflows.
+          - Built models of the iPhone RF front end to generate firmware configuration profiles and support system-level validation.
+          - Led bench debugging during prototyping and factory bring-up, tracing performance issues across hardware, measurement setups, and production test flows.
 
       - company: Apple Inc.
         position: Wireless Hardware Engineering Intern
