@@ -8,10 +8,7 @@ profile:
   align: right
   image: noah-jaffe-portrait.jpeg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Institute for Logic, Language and Computation</p>
-    <p>University of Amsterdam</p>
-    <p>Amsterdam, The Netherlands</p>
+  more_info: ""
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
@@ -28,6 +25,7 @@ latest_posts:
 ---
 
 I am a PhD researcher and engineer working at the intersection of historical keyboard instruments, embedded sensing, and computational analysis.
+I am part of the [Music Cognition Group](https://www.mcg.uva.nl/), which is part of the Institute for Logic, Language and Computation at the University of Amsterdam.
 My work centers on projects involving historical keyboard instruments and technology, building systems that make instruments newly measurable, playable, and interpretable, while opening up new possibilities for performance, research, and digital instrument design.
 
 Before beginning my PhD at the Institute for Logic, Language and Computation (UvA), I spent eight years at Apple as an RF hardware engineer, where I built Python-based tooling and test infrastructure and contributed to the modeling, validation, and production bring-up of cellular RF front-end systems.

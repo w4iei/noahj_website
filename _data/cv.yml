@@ -1,18 +1,17 @@
 cv:
   name: Noah Jaffe
   label: PhD Researcher, Musicologist, and Hardware/Software Engineer
-  location: Amsterdam, The Netherlands
+  location: Amsterdam
   image: ""
   summary: Noah Jaffe is a PhD researcher, musicologist, and instrument developer working at the intersection of historical keyboard instruments, artistic research, and digital instrument design. His background combines engineering, computational musicology, and analytical tools for complex cultural data.
 
   address:
     city: Amsterdam
-    region: The Netherlands
 
   sections:
     Education:
       - institution: University of Amsterdam, Institute for Logic, Language and Computation (ILLC)
-        location: Amsterdam, The Netherlands
+        location: Amsterdam
         area: Computational Musicology
         studyType: Ph.D. (in progress)
         start_date: 2024
@@ -21,7 +20,7 @@ cv:
           - Research on historical keyboard performance and the development of non-invasive sensing systems for harpsichords and early pianos.
 
       - institution: University of Amsterdam
-        location: Amsterdam, The Netherlands
+        location: Amsterdam
         area: Musicology
         studyType: M.A.
         start_date: 2021
@@ -30,7 +29,7 @@ cv:
           - "Thesis: *Musical Source Separation: WSDR---Lending Weight to SDR*"
 
       - institution: Georgia Institute of Technology
-        location: Atlanta, Georgia, US
+        location: Atlanta, Georgia
         area: Electrical Engineering
         studyType: B.S.
         start_date: 2009
@@ -39,7 +38,7 @@ cv:
     Experience:
       - company: Institute for Logic, Language and Computation (ILLC), University of Amsterdam
         position: PhD Researcher
-        location: Amsterdam, The Netherlands
+        location: Amsterdam
         start_date: 2024
         end_date: Present
         summary: Research on historical keyboard performance and the development of non-invasive sensing systems for harpsichords and early pianos.
@@ -48,7 +47,7 @@ cv:
 
       - company: klavecimbel.com
         position: Founder & Engineer
-        location: Amsterdam, The Netherlands
+        location: Amsterdam
         start_date: 2024
         end_date: Present
         highlights:
@@ -57,7 +56,7 @@ cv:
 
       - company: Stichting Tijdloze Klavieren
         position: Executive & Artistic Director
-        location: Amsterdam, The Netherlands
+        location: Amsterdam
         start_date: 2024
         end_date: Present
         highlights:
@@ -67,7 +66,7 @@ cv:
 
       - company: Apple Inc.
         position: Hardware and Software Engineer, Wireless Hardware Engineering
-        location: Cupertino, California, US
+        location: Cupertino, California
         start_date: 2013
         end_date: 2020
         summary: Eight years at Apple developing iPhone wireless communication hardware and related test infrastructure.
@@ -79,7 +78,7 @@ cv:
 
       - company: Apple Inc.
         position: Wireless Hardware Engineering Intern
-        location: Cupertino, California, US
+        location: Cupertino, California
         start_date: 2012
         end_date: 2012
         highlights:
@@ -88,7 +87,7 @@ cv:
 
       - company: Research In Motion (BlackBerry)
         position: Wireless Hardware Engineering Intern
-        location: Sunrise, Florida, US
+        location: Sunrise, Florida
         start_date: 2011
         end_date: 2011
         highlights:
@@ -109,7 +108,6 @@ cv:
       - title: "The Portable Harpsichord: Past and Present"
         publisher: "Harpsichord & fortepiano Magazine"
         releaseDate: 2026
-        summary: Under review
 
     Skills:
       - name: RF and hardware systems
