@@ -24,7 +24,7 @@ ninja.data = [{
             window.location.href = "/publications/";
           },
         },{id: "nav-concerts",
-          title: "Concerts",
+          title: "concerts",
           description: "Concerts and initiatives that I have organized and produced, including artistic planning and production.",
           section: "Navigation",
           handler: () => {
