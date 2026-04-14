@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://noahj.org/sitemap.xml
+Sitemap: https://noahjaffe.org/sitemap.xml
