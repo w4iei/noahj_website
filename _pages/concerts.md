@@ -9,10 +9,11 @@ nav_order: 3
 
 ## Stichting Tijdloze Klavieren
 
-Stichting Tijdloze Klavieren produces concerts centered on historical keyboard instruments. 
+Stichting Tijdloze Klavieren produces concerts centered on historical keyboard instruments.
 See [AmsterdamEarlyMusic.com](https://amsterdamearlymusic.com).
 
 #### Artem Belogurov plays Mozart Piano Sonatas on a 1783 Stein Fortepiano
+
 May 1st, 2026, Het Concertgebouw Amsterdam (Kleine Zaal)  
 The organisation's debut concert. Conceived, programmed, and produced, including securing the venue and establishing a working relationship with the Concertgebouw.
 
