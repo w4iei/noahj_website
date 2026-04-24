@@ -34,4 +34,4 @@ That engineering background continues to shape my approach to musical and cultur
 Current work includes [**PHOTON**](https://github.com/w4iei/PHOTON), a non-invasive optical sensing platform for historical keyboard instruments, [**klavecimbel.com**](https://klavecimbel.com), and [**AmsterdamEarlyMusic.com**](https://amsterdamearlymusic.com), as well as other projects involving historical keyboards, musical interfaces, and instrument-centered technology.
 If you are working on related problems or think we might collaborate, I would be glad to hear from you.
 The best way to reach me is by email: my first name @ noahjaffe.org
-Alternatively, you can use this contact form: https://www.klavecimbel.com/contact
+Alternatively, you can use this [contact form](https://www.klavecimbel.com/contact).
