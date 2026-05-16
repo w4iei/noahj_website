@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD researcher, musicologist, and hardware/software engineer in Amsterdam.
+subtitle: Researcher, musicologist, and hardware/software engineer in Amsterdam.
 
 profile:
   align: right
@@ -24,14 +24,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a PhD researcher and engineer developing new sensing, measurement, and computational tools for complex physical systems, with a particular focus on historical keyboard instruments.  
-I am part of the [Music Cognition Group](https://www.mcg.uva.nl/), within the Institute for Logic, Language and Computation at the University of Amsterdam.  
-Within MIR and audio, my work includes instrument sensing systems, source separation, hyperinstruments, human listening studies, and the evaluation of machine learning models against human perception.
+I am a PhD researcher and engineer building [**PHOTON**](https://github.com/w4iei/PHOTON), a non-invasive optical sensing platform for historical keyboard instruments.
+I am part of the [Music Cognition Group](https://www.mcg.uva.nl/), within the Institute for Logic, Language and Computation at the University of Amsterdam.
+Within music information retrieval and audio, my work includes source separation, hyperinstruments, and perceptual evaluation of machine learning models.
 
-Before beginning my PhD, I worked at Apple on iPhone RF front-end systems and the Python-based tooling used to model, validate, and debug them from prototyping through production bring-up.
-That engineering background continues to shape my approach to musical and cultural problems that demand precision, robustness, and close attention to the behavior of real physical systems.
+Before beginning my PhD, I worked at Apple on the iPhone RF Design team and founded an internal classical music concert series for employees.
 
-Current work includes [**PHOTON**](https://github.com/w4iei/PHOTON), a non-invasive optical sensing platform for historical keyboard instruments, [**klavecimbel.com**](https://klavecimbel.com), and [**AmsterdamEarlyMusic.com**](https://amsterdamearlymusic.com), as well as other projects involving historical keyboards, musical interfaces, and instrument-centered technology.
-If you are working on related problems or think we might collaborate, I would be glad to hear from you.
-The best way to reach me is by email: my first name @ noahjaffe.org
-Alternatively, you can use this [contact form](https://www.klavecimbel.com/contact).
+Through [**AmsterdamEarlyMusic.com**](https://amsterdamearlymusic.com), I produce concerts at Het Concertgebouw and maintain an calendar of early music events in Amsterdam.
+For collaborations or projects, reach me at my first name @ noahjaffe.org, or via [**klavecimbel.com**](https://klavecimbel.com).
