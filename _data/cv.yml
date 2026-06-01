@@ -103,8 +103,9 @@ cv:
         summary: Accepted for publication
 
       - title: "The Portable Harpsichord: Past and Present"
-        publisher: "Harpsichord & fortepiano Magazine"
+        publisher: "Harpsichord & fortepiano Magazine, Spring 2026, Vol. 30, No. 2, pp. 12-16"
         releaseDate: 2026
+        url: https://noahjaffe.org/assets/pdf/H_F__Portable_Harpsichord_preprint.pdf
 
     Skills:
       - name: RF and hardware systems
