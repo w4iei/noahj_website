@@ -30,5 +30,5 @@ Within music information retrieval and audio, my work includes source separation
 
 Before beginning my PhD, I worked at Apple on the iPhone RF Design team and founded an internal classical music concert series for employees.
 
-Through [**AmsterdamEarlyMusic.com**](https://amsterdamearlymusic.com), I produce concerts at Het Concertgebouw and maintain an calendar of early music events in Amsterdam.
-For collaborations or projects, reach me at my first name @ noahjaffe.org, or via [**klavecimbel.com**](https://klavecimbel.com).
+Through [**AmsterdamEarlyMusic.com**](https://amsterdamearlymusic.com), I produce concerts at Het Concertgebouw and maintain a calendar of early music events in Amsterdam.
+I am also available for freelance concert production. For collaborations or projects, reach me at my first name @ noahjaffe.org, or via [**klavecimbel.com**](https://klavecimbel.com).
