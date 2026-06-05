@@ -1,0 +1,29 @@
+# Noah Jaffe
+
+Official website of Noah Jaffe, a PhD researcher, musicologist, and
+hardware/software engineer based in Amsterdam.
+
+Primary topics:
+- historical keyboard instruments
+- harpsichord and fortepiano research
+- PHOTON optical sensing platform
+- computational musicology
+- music information retrieval
+- source separation
+- embedded systems and performance capture
+- concert production and Amsterdam early music
+
+Key pages:
+- https://noahjaffe.org/ — profile and overview
+- https://noahjaffe.org/cv/ — CV, experience, education, and technical focus
+- https://noahjaffe.org/publications/ — publications and works in progress
+- https://noahjaffe.org/productions/ — concerts and production work
+
+Important associated entities mentioned on the site:
+- PHOTON — https://github.com/w4iei/PHOTON
+- Music Cognition Group — https://www.mcg.uva.nl/
+- Institute for Logic, Language and Computation — https://www.illc.uva.nl/
+- University of Amsterdam — https://www.uva.nl/
+- klavecimbel.com — https://klavecimbel.com
+- AmsterdamEarlyMusic.com — https://amsterdamearlymusic.com
+- Stichting Tijdloze Klavieren — https://amsterdamearlymusic.com
