@@ -1,0 +1,178 @@
+person:
+  name: Noah Jaffe
+  given_name: Noah
+  family_name: Jaffe
+  job_title: PhD researcher, musicologist, and hardware/software engineer
+  description: >-
+    Noah Jaffe is a PhD researcher, musicologist, and hardware/software
+    engineer working on historical keyboard instruments, computational
+    musicology, optical sensing, and concert production.
+  image: /assets/img/noah-jaffe-portrait.jpeg
+  home_location: Amsterdam, The Netherlands
+  works_for:
+    - illc
+    - klavecimbel
+    - stichting-tijdloze-klavieren
+  member_of:
+    - music-cognition-group
+  alumni_of:
+    - university-of-amsterdam
+    - georgia-tech
+  owns:
+    - photon
+  occupations:
+    - PhD Researcher
+    - Musicologist
+    - Hardware and Software Engineer
+    - Concert Producer
+  knows_about:
+    - historical keyboard instruments
+    - harpsichord
+    - fortepiano
+    - early pianos
+    - computational musicology
+    - music information retrieval
+    - source separation
+    - hyperinstruments
+    - perceptual evaluation of machine learning models
+    - embedded systems
+    - optical sensing
+    - performance capture
+    - MIDI
+    - early music
+    - concert production
+    - RF systems
+
+organizations:
+  - id: university-of-amsterdam
+    type: CollegeOrUniversity
+    name: University of Amsterdam
+    url: https://www.uva.nl/
+  - id: georgia-tech
+    type: CollegeOrUniversity
+    name: Georgia Institute of Technology
+    url: https://www.gatech.edu/
+  - id: illc
+    type: ResearchOrganization
+    name: Institute for Logic, Language and Computation
+    url: https://www.illc.uva.nl/
+    parent_id: university-of-amsterdam
+  - id: music-cognition-group
+    type: ResearchOrganization
+    name: Music Cognition Group
+    url: https://www.mcg.uva.nl/
+    parent_id: university-of-amsterdam
+  - id: klavecimbel
+    type: Organization
+    name: klavecimbel.com
+    url: https://klavecimbel.com
+  - id: stichting-tijdloze-klavieren
+    type: Organization
+    name: Stichting Tijdloze Klavieren
+    url: https://amsterdamearlymusic.com
+  - id: amsterdam-early-music
+    type: WebSite
+    name: AmsterdamEarlyMusic.com
+    url: https://amsterdamearlymusic.com
+  - id: apple
+    type: Organization
+    name: Apple
+    url: https://www.apple.com/
+  - id: winchester-orchestra-of-san-jose
+    type: Organization
+    name: Winchester Orchestra of San Jose
+    url: https://www.winchesterorchestra.com/about/
+
+products:
+  - id: photon
+    type: Product
+    name: PHOTON
+    url: https://github.com/w4iei/PHOTON
+    description: Non-invasive optical sensing platform for historical keyboard instruments.
+    brand_id: klavecimbel
+    keywords:
+      - historical keyboard instruments
+      - optical sensing
+      - performance capture
+      - MIDI
+      - harpsichord
+      - fortepiano
+
+services:
+  - id: concert-production
+    type: Service
+    name: Concert production
+    service_type: Concert production and artistic planning
+    provider_id: person
+    area_served: Amsterdam, The Netherlands
+    description: >-
+      Concert planning, programming, production, and venue coordination for
+      early music and historical keyboard instrument events.
+  - id: historical-keyboard-instrument-systems
+    type: Service
+    name: Historical keyboard instrument sensing and retrofit design
+    service_type: Hardware and software systems for historical keyboard instruments
+    provider_id: person
+    description: >-
+      Non-invasive sensing, custom electronics, embedded systems, performance
+      capture, and MIDI retrofit design for historical keyboard instruments.
+
+publications:
+  - id: wsdr
+    type: ScholarlyArticle
+    name: "Musical Source Separation Bake-Off: Comparing Objective Metrics with Human Perception"
+    url: https://arxiv.org/abs/2507.06917
+    date_published: 2025-11-14
+    publisher: IEEE
+    is_part_of: Proceedings of the IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)
+    about:
+      - source separation
+      - music information retrieval
+      - perceptual evaluation
+      - machine learning
+  - id: photon-nime-2026
+    type: ScholarlyArticle
+    name: "PHOTON: Non-Invasive Optical Tracking of Key-Lever Motion in Historical Keyboard Instruments"
+    url: https://arxiv.org/abs/2604.21682
+    date_published: "2026"
+    is_part_of: Proceedings of the 2026 International Conference on New Interfaces for Musical Expression (NIME)
+    about:
+      - PHOTON
+      - historical keyboard instruments
+      - optical sensing
+      - performance capture
+      - MIDI
+  - id: portable-harpsichord-2026
+    type: Article
+    name: "The Portable Harpsichord: Past and Present"
+    url: https://noahjaffe.org/assets/pdf/H_F__Portable_Harpsichord_preprint.pdf
+    date_published: "2026"
+    is_part_of: Harpsichord & fortepiano Magazine
+    about:
+      - portable harpsichord
+      - historical keyboard instruments
+      - harpsichord
+
+events:
+  - id: artem-belogurov-mozart-2026
+    type: MusicEvent
+    name: Artem Belogurov plays Mozart Piano Sonatas on a 1783 Stein Fortepiano
+    start_date: 2026-05-01
+    url: /productions/
+    event_status: EventScheduled
+    attendance_mode: OfflineEventAttendanceMode
+    organizer_id: stichting-tijdloze-klavieren
+    location_id: concertgebouw
+    performer_name: Artem Belogurov
+    composer_name: Wolfgang Amadeus Mozart
+    about:
+      - Mozart piano sonatas
+      - fortepiano
+      - historical keyboard instruments
+
+venues:
+  - id: concertgebouw
+    type: MusicVenue
+    name: Het Concertgebouw Amsterdam
+    address_locality: Amsterdam
+    address_country: NL

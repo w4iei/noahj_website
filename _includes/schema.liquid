@@ -1,0 +1,453 @@
+{% assign entity = site.data.entity %}
+{% assign base_url = site.url | append: site.baseurl %}
+{% assign website_id = base_url | append: '/#website' %}
+{% assign person_id = base_url | append: '/#person' %}
+{% assign page_id = include.canonical_url | append: '#webpage' %}
+{% assign page_title = include.page_title | strip_html | strip_newlines %}
+{% assign page_description = include.page_description | strip_html | strip_newlines %}
+{% assign is_home = false %}
+{% assign is_cv = false %}
+{% assign is_publications = false %}
+{% assign is_productions = false %}
+{% assign is_blog_index = false %}
+{% assign is_collection_page = false %}
+
+{% if page.layout == 'about' or page.url == '/' %}
+  {% assign is_home = true %}
+{% endif %}
+{% if page.url == '/cv/' %}
+  {% assign is_cv = true %}
+{% endif %}
+{% if page.url == '/publications/' %}
+  {% assign is_publications = true %}
+{% endif %}
+{% if page.url == '/productions/' %}
+  {% assign is_productions = true %}
+{% endif %}
+{% if page.url == '/blog/' or page.url == '/blog/index.html' %}
+  {% assign is_blog_index = true %}
+{% endif %}
+{% if is_publications
+  or is_productions
+  or is_blog_index
+  or page.url == '/projects/'
+  or page.url == '/teaching/'
+  or page.url == '/books/'
+  or page.url == '/news/'
+  or page.url == '/repositories/'
+%}
+  {% assign is_collection_page = true %}
+{% endif %}
+
+{% unless page.url == '/404.html' or page.redirect %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": {{ website_id | jsonify }},
+          "url": {{ base_url | append: '/' | jsonify }},
+          "name": {{ include.site_title | jsonify }},
+          "description": {{ site.description | strip_html | strip_newlines | jsonify }},
+          "inLanguage": {{ site.lang | jsonify }},
+          "publisher": {
+            "@id": {{ person_id | jsonify }}
+          },
+          "about": {{ entity.person.knows_about | jsonify }}
+        },
+        {
+          "@type": "Person",
+          "@id": {{ person_id | jsonify }},
+          "name": {{ entity.person.name | jsonify }},
+          "givenName": {{ entity.person.given_name | jsonify }},
+          "familyName": {{ entity.person.family_name | jsonify }},
+          "url": {{ base_url | append: '/' | jsonify }},
+          "image": {{ entity.person.image | absolute_url | jsonify }},
+          "description": {{ entity.person.description | jsonify }},
+          "jobTitle": {{ entity.person.job_title | jsonify }},
+          "homeLocation": {
+            "@type": "Place",
+            "name": {{ entity.person.home_location | jsonify }}
+          },
+          "hasOccupation": [
+            {% for occupation in entity.person.occupations %}
+              {
+                "@type": "Occupation",
+                "name": {{ occupation | jsonify }}
+              }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          ],
+          "worksFor": [
+            {% for org_id in entity.person.works_for %}
+              {
+                "@id": {{ base_url | append: '/#org-' | append: org_id | jsonify }}
+              }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          ],
+          "memberOf": [
+            {% for org_id in entity.person.member_of %}
+              {
+                "@id": {{ base_url | append: '/#org-' | append: org_id | jsonify }}
+              }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          ],
+          "alumniOf": [
+            {% for org_id in entity.person.alumni_of %}
+              {
+                "@id": {{ base_url | append: '/#org-' | append: org_id | jsonify }}
+              }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          ],
+          "owns": [
+            {% for product_id in entity.person.owns %}
+              {
+                "@id": {{ base_url | append: '/#product-' | append: product_id | jsonify }}
+              }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          ],
+          "knowsAbout": {{ entity.person.knows_about | jsonify }}
+        },
+        {% for organization in entity.organizations %}
+          {
+            "@type": {{ organization.type | jsonify }},
+            "@id": {{ base_url | append: '/#org-' | append: organization.id | jsonify }},
+            "name": {{ organization.name | jsonify }},
+            "url": {{ organization.url | jsonify }}{% if organization.parent_id %},
+            "parentOrganization": {
+              "@id": {{ base_url | append: '/#org-' | append: organization.parent_id | jsonify }}
+            }{% endif %}
+          },
+        {% endfor %}
+        {% for product in entity.products %}
+          {
+            "@type": {{ product.type | jsonify }},
+            "@id": {{ base_url | append: '/#product-' | append: product.id | jsonify }},
+            "name": {{ product.name | jsonify }},
+            "url": {{ product.url | jsonify }},
+            "description": {{ product.description | jsonify }},
+            "brand": {
+              "@id": {{ base_url | append: '/#org-' | append: product.brand_id | jsonify }}
+            },
+            "manufacturer": {
+              "@id": {{ person_id | jsonify }}
+            },
+            "keywords": {{ product.keywords | join: ', ' | jsonify }}
+          },
+        {% endfor %}
+        {% for service in entity.services %}
+          {
+            "@type": {{ service.type | jsonify }},
+            "@id": {{ base_url | append: '/#service-' | append: service.id | jsonify }},
+            "name": {{ service.name | jsonify }},
+            "serviceType": {{ service.service_type | jsonify }},
+            "provider": {
+              "@id": {% if service.provider_id == 'person' %}{{ person_id | jsonify }}{% else %}{{ base_url | append: '/#org-' | append: service.provider_id | jsonify }}{% endif %}
+            },
+            "description": {{ service.description | jsonify }}{% if service.area_served %},
+            "areaServed": {{ service.area_served | jsonify }}{% endif %}
+          }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+    }
+  </script>
+{% endunless %}
+
+{% unless page.url == '/404.html' or page.redirect %}
+  {% if include.is_blog_post %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "@id": {{ page_id | jsonify }},
+        "headline": {{ page.title | strip_html | strip_newlines | jsonify }},
+        "name": {{ page.title | strip_html | strip_newlines | jsonify }},
+        "description": {{ page_description | jsonify }},
+        "url": {{ include.canonical_url | jsonify }},
+        "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+        "dateModified": {{ page.last_modified_at | default: page.last_updated | default: page.date | date_to_xmlschema | jsonify }},
+        "author": {
+          "@id": {{ person_id | jsonify }}
+        },
+        "publisher": {
+          "@id": {{ person_id | jsonify }}
+        },
+        "isPartOf": {
+          "@id": {{ website_id | jsonify }}
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": {{ page_id | jsonify }}
+        }{% if page.tags and page.tags.size > 0 %},
+        "keywords": {{ page.tags | join: ', ' | jsonify }}{% endif %}
+      }
+    </script>
+  {% elsif is_home or is_cv %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "@id": {{ page_id | jsonify }},
+        "url": {{ include.canonical_url | jsonify }},
+        "name": {{ page_title | jsonify }},
+        "description": {{ page_description | jsonify }},
+        "isPartOf": {
+          "@id": {{ website_id | jsonify }}
+        },
+        "about": {
+          "@id": {{ person_id | jsonify }}
+        },
+        "mainEntity": {
+          "@id": {{ person_id | jsonify }}
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": {{ include.seo_image | jsonify }}
+        },
+        "mentions": [
+          {
+            "@id": {{ base_url | append: '/#product-photon' | jsonify }}
+          },
+          {
+            "@id": {{ base_url | append: '/#org-music-cognition-group' | jsonify }}
+          },
+          {
+            "@id": {{ base_url | append: '/#org-illc' | jsonify }}
+          },
+          {
+            "@id": {{ base_url | append: '/#org-university-of-amsterdam' | jsonify }}
+          },
+          {
+            "@id": {{ base_url | append: '/#org-klavecimbel' | jsonify }}
+          },
+          {
+            "@id": {{ base_url | append: '/#org-stichting-tijdloze-klavieren' | jsonify }}
+          },
+          {
+            "@id": {{ base_url | append: '/#org-amsterdam-early-music' | jsonify }}
+          },
+          {
+            "@id": {{ base_url | append: '/#org-apple' | jsonify }}
+          }
+        ]
+      }
+    </script>
+  {% elsif is_publications %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": {{ page_id | jsonify }},
+            "url": {{ include.canonical_url | jsonify }},
+            "name": {{ page_title | jsonify }},
+            "description": {{ page_description | jsonify }},
+            "isPartOf": {
+              "@id": {{ website_id | jsonify }}
+            },
+            "about": {
+              "@id": {{ person_id | jsonify }}
+            },
+            "mainEntity": {
+              "@id": {{ include.canonical_url | append: '#itemlist' | jsonify }}
+            },
+            "mentions": [
+              {
+                "@id": {{ base_url | append: '/#product-photon' | jsonify }}
+              }
+            ]
+          },
+          {
+            "@type": "ItemList",
+            "@id": {{ include.canonical_url | append: '#itemlist' | jsonify }},
+            "name": "Publications by Noah Jaffe",
+            "itemListElement": [
+              {% for publication in entity.publications %}
+                {
+                  "@type": "ListItem",
+                  "position": {{ forloop.index }},
+                  "item": {
+                    "@id": {{ base_url | append: '/#publication-' | append: publication.id | jsonify }}
+                  }
+                }{% unless forloop.last %},{% endunless %}
+              {% endfor %}
+            ]
+          },
+          {% for publication in entity.publications %}
+            {
+              "@type": {{ publication.type | jsonify }},
+              "@id": {{ base_url | append: '/#publication-' | append: publication.id | jsonify }},
+              "name": {{ publication.name | jsonify }},
+              "url": {{ publication.url | jsonify }},
+              "author": {
+                "@id": {{ person_id | jsonify }}
+              },
+              "datePublished": {{ publication.date_published | jsonify }},
+              "about": {{ publication.about | jsonify }},
+              "isPartOf": {
+                "@type": "CreativeWork",
+                "name": {{ publication.is_part_of | jsonify }}
+              }{% if publication.publisher %},
+              "publisher": {
+                "@type": "Organization",
+                "name": {{ publication.publisher | jsonify }}
+              }{% endif %}
+            }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }
+    </script>
+  {% elsif is_productions %}
+    {% assign event = entity.events | first %}
+    {% assign venue = entity.venues | first %}
+    {% assign mozart_id = base_url | append: '/#person-wolfgang-amadeus-mozart' %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": {{ page_id | jsonify }},
+            "url": {{ include.canonical_url | jsonify }},
+            "name": {{ page_title | jsonify }},
+            "description": {{ page_description | jsonify }},
+            "isPartOf": {
+              "@id": {{ website_id | jsonify }}
+            },
+            "about": {
+              "@id": {{ base_url | append: '/#org-stichting-tijdloze-klavieren' | jsonify }}
+            },
+            "mainEntity": {
+              "@id": {{ include.canonical_url | append: '#itemlist' | jsonify }}
+            },
+            "mentions": [
+              {
+                "@id": {{ base_url | append: '/#org-amsterdam-early-music' | jsonify }}
+              },
+              {
+                "@id": {{ base_url | append: '/#org-apple' | jsonify }}
+              },
+              {
+                "@id": {{ base_url | append: '/#org-winchester-orchestra-of-san-jose' | jsonify }}
+              }
+            ]
+          },
+          {
+            "@type": "ItemList",
+            "@id": {{ include.canonical_url | append: '#itemlist' | jsonify }},
+            "name": "Concert productions and initiatives",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@id": {{ base_url | append: '/#event-' | append: event.id | jsonify }}
+                }
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": {{ mozart_id | jsonify }},
+            "name": "Wolfgang Amadeus Mozart",
+            "jobTitle": "Composer"
+          },
+          {
+            "@type": {{ venue.type | jsonify }},
+            "@id": {{ base_url | append: '/#venue-' | append: venue.id | jsonify }},
+            "name": {{ venue.name | jsonify }},
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": {{ venue.address_locality | jsonify }},
+              "addressCountry": {{ venue.address_country | jsonify }}
+            }
+          },
+          {
+            "@type": {{ event.type | jsonify }},
+            "@id": {{ base_url | append: '/#event-' | append: event.id | jsonify }},
+            "name": {{ event.name | jsonify }},
+            "url": {{ event.url | absolute_url | jsonify }},
+            "startDate": {{ event.start_date | jsonify }},
+            "eventStatus": {{ 'https://schema.org/' | append: event.event_status | jsonify }},
+            "eventAttendanceMode": {{ 'https://schema.org/' | append: event.attendance_mode | jsonify }},
+            "location": {
+              "@id": {{ base_url | append: '/#venue-' | append: event.location_id | jsonify }}
+            },
+            "organizer": {
+              "@id": {{ base_url | append: '/#org-' | append: event.organizer_id | jsonify }}
+            },
+            "performer": {
+              "@type": "Person",
+              "name": {{ event.performer_name | jsonify }}
+            },
+            "workPerformed": {
+              "@type": "MusicComposition",
+              "name": "Mozart Piano Sonatas",
+              "composer": {
+                "@id": {{ mozart_id | jsonify }}
+              }
+            },
+            "about": [
+              {
+                "@id": {{ mozart_id | jsonify }}
+              },
+              "fortepiano",
+              "historical keyboard instruments"
+            ]
+          }
+        ]
+      }
+    </script>
+  {% elsif is_blog_index %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": {{ page_id | jsonify }},
+            "url": {{ include.canonical_url | jsonify }},
+            "name": {{ page_title | jsonify }},
+            "description": {{ page_description | jsonify }},
+            "isPartOf": {
+              "@id": {{ website_id | jsonify }}
+            },
+            "about": {
+              "@id": {{ person_id | jsonify }}
+            },
+            "mainEntity": {
+              "@id": {{ include.canonical_url | append: '#blog' | jsonify }}
+            }
+          },
+          {
+            "@type": "Blog",
+            "@id": {{ include.canonical_url | append: '#blog' | jsonify }},
+            "name": {{ site.blog_name | jsonify }},
+            "description": {{ site.blog_description | jsonify }},
+            "publisher": {
+              "@id": {{ person_id | jsonify }}
+            }
+          }
+        ]
+      }
+    </script>
+  {% else %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": {% if is_collection_page %}"CollectionPage"{% else %}"WebPage"{% endif %},
+        "@id": {{ page_id | jsonify }},
+        "url": {{ include.canonical_url | jsonify }},
+        "name": {{ page_title | jsonify }},
+        "description": {{ page_description | jsonify }},
+        "isPartOf": {
+          "@id": {{ website_id | jsonify }}
+        },
+        "about": {
+          "@id": {{ person_id | jsonify }}
+        }
+      }
+    </script>
+  {% endif %}
+{% endunless %}
