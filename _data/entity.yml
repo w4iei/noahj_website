@@ -133,9 +133,9 @@ publications:
   - id: photon-nime-2026
     type: ScholarlyArticle
     name: "PHOTON: Non-Invasive Optical Tracking of Key-Lever Motion in Historical Keyboard Instruments"
-    url: https://arxiv.org/abs/2604.21682
-    date_published: "2026"
-    is_part_of: Proceedings of the 2026 International Conference on New Interfaces for Musical Expression (NIME)
+    url: https://nime.org/proc/nime2026_85/index.html
+    date_published: "2026-06"
+    is_part_of: Proceedings of the International Conference on New Interfaces for Musical Expression
     about:
       - PHOTON
       - historical keyboard instruments

@@ -98,9 +98,9 @@ cv:
         url: https://arxiv.org/abs/2507.06917
 
       - title: "PHOTON: Non-Invasive Optical Tracking of Key-Lever Motion in Historical Keyboard Instruments"
-        publisher: Proceedings of the International Conference on New Interfaces for Musical Expression (NIME)
-        releaseDate: 2026
-        summary: Accepted for publication
+        publisher: Proceedings of the International Conference on New Interfaces for Musical Expression, pp. 722-729
+        releaseDate: "2026-06"
+        url: https://nime.org/proc/nime2026_85/index.html
 
       - title: "The Portable Harpsichord: Past and Present"
         publisher: "Harpsichord & fortepiano Magazine, Spring 2026, Vol. 30, No. 2, pp. 12-16"
