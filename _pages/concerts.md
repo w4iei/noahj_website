@@ -7,10 +7,22 @@ nav: true
 nav_order: 3
 ---
 
-## Stichting Tijdloze Klavieren
+<hr>
+
+## [Stichting Tijdloze Klavieren](https://amsterdamearlymusic.com/about/)
 
 Stichting Tijdloze Klavieren produces concerts centered on historical keyboard instruments.
-See [AmsterdamEarlyMusic.com](https://amsterdamearlymusic.com).
+See [AmsterdamEarlyMusic.com](https://earlymusicconcerts.com/productions/).
+
+#### [Duo Pleyel: From Muffat to Beethoven](https://www.concertgebouw.nl/concerten/45947064-van-muffat-tot-beethoven-richard-egarr-en-alexandra-nepomnyashchaya?utm_source=earlymusicconcerts&utm_medium=referral&utm_campaign=agenda)
+
+January 20th, 2027, Het Concertgebouw Amsterdam (Kleine Zaal)  
+Richard Egarr and Alexandra Nepomnyashchaya, harpsichord and 1848 Pleyel piano. Before recordings existed, four-hand piano arrangements brought orchestral music into the home. Works by Händel, J.C. Bach, and Mozart, and Beethoven's Sixth Symphony in Czerny's arrangement for piano four hands.
+
+#### [Duo Zeffiretti: sopranista Maayan Licht and harpsichordist Guy Maori](https://www.concertgebouw.nl/concerten/45946620-duo-zeffiretti-sopranista-maayan-licht-en-klavecinist-guy-maori?utm_source=earlymusicconcerts&utm_medium=referral&utm_campaign=agenda)
+
+November 13th, 2026, Het Concertgebouw Amsterdam (Kleine Zaal)  
+Baroque arias once written for the legendary castrati, alongside virtuoso works on a Flemish Ruckers-style harpsichord. Programme includes Bach's Italian Concerto, BWV 971.
 
 #### Artem Belogurov plays Mozart Piano Sonatas on a 1783 Stein Fortepiano
 

@@ -299,9 +299,6 @@
       }
     </script>
   {% elsif is_productions %}
-    {% assign event = entity.events | first %}
-    {% assign venue = entity.venues | first %}
-    {% assign mozart_id = base_url | append: '/#person-wolfgang-amadeus-mozart' %}
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -318,9 +315,6 @@
             "about": {
               "@id": {{ base_url | append: '/#org-stichting-tijdloze-klavieren' | jsonify }}
             },
-            "mainEntity": {
-              "@id": {{ include.canonical_url | append: '#itemlist' | jsonify }}
-            },
             "mentions": [
               {
                 "@id": {{ base_url | append: '/#org-amsterdam-early-music' | jsonify }}
@@ -331,69 +325,6 @@
               {
                 "@id": {{ base_url | append: '/#org-winchester-orchestra-of-san-jose' | jsonify }}
               }
-            ]
-          },
-          {
-            "@type": "ItemList",
-            "@id": {{ include.canonical_url | append: '#itemlist' | jsonify }},
-            "name": "Concert productions and initiatives",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "item": {
-                  "@id": {{ base_url | append: '/#event-' | append: event.id | jsonify }}
-                }
-              }
-            ]
-          },
-          {
-            "@type": "Person",
-            "@id": {{ mozart_id | jsonify }},
-            "name": "Wolfgang Amadeus Mozart",
-            "jobTitle": "Composer"
-          },
-          {
-            "@type": {{ venue.type | jsonify }},
-            "@id": {{ base_url | append: '/#venue-' | append: venue.id | jsonify }},
-            "name": {{ venue.name | jsonify }},
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": {{ venue.address_locality | jsonify }},
-              "addressCountry": {{ venue.address_country | jsonify }}
-            }
-          },
-          {
-            "@type": {{ event.type | jsonify }},
-            "@id": {{ base_url | append: '/#event-' | append: event.id | jsonify }},
-            "name": {{ event.name | jsonify }},
-            "url": {{ event.url | absolute_url | jsonify }},
-            "startDate": {{ event.start_date | jsonify }},
-            "eventStatus": {{ 'https://schema.org/' | append: event.event_status | jsonify }},
-            "eventAttendanceMode": {{ 'https://schema.org/' | append: event.attendance_mode | jsonify }},
-            "location": {
-              "@id": {{ base_url | append: '/#venue-' | append: event.location_id | jsonify }}
-            },
-            "organizer": {
-              "@id": {{ base_url | append: '/#org-' | append: event.organizer_id | jsonify }}
-            },
-            "performer": {
-              "@type": "Person",
-              "name": {{ event.performer_name | jsonify }}
-            },
-            "workPerformed": {
-              "@type": "MusicComposition",
-              "name": "Mozart Piano Sonatas",
-              "composer": {
-                "@id": {{ mozart_id | jsonify }}
-              }
-            },
-            "about": [
-              {
-                "@id": {{ mozart_id | jsonify }}
-              },
-              "fortepiano",
-              "historical keyboard instruments"
             ]
           }
         ]
