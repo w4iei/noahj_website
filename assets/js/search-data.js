@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-cv",
           title: "CV",
-          description: "Experience, education, publications, and technical focus.",
+          description: "Electrical Engineer: RF test, validation, and embedded hardware.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
