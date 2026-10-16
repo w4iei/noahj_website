@@ -66,10 +66,12 @@
           "image": {{ entity.person.image | absolute_url | jsonify }},
           "description": {{ entity.person.description | jsonify }},
           "jobTitle": {{ entity.person.job_title | jsonify }},
-          "homeLocation": {
-            "@type": "Place",
-            "name": {{ entity.person.home_location | jsonify }}
-          },
+          {% if entity.person.home_location %}
+            "homeLocation": {
+              "@type": "Place",
+              "name": {{ entity.person.home_location | jsonify }}
+            },
+          {% endif %}
           "hasOccupation": [
             {% for occupation in entity.person.occupations %}
               {

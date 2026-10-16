@@ -1,30 +1,132 @@
+# Every claim on this page traces to application_materials/reference/fact_bank.md.
+# Fact IDs are noted beside each entry. Positioning rules followed: POSITION-1
+# (reverse chronological, current hardware first), POSITION-2 (no "systems
+# engineer" self-label), POSITION-8 (PhD only with its explanation), POSITION-10
+# (every fact once: tools in Skills, accomplishments in Experience, no summary).
+# No name, label, email, location, or work rights here: any of them makes the
+# layout render a public "Contact Information" card. The title line (PROFILE-1,
+# POSITION-3) lives in the description in _pages/cv.md instead.
 cv:
-  name: Noah Jaffe
-  label: Systems Engineer and Researcher
-  location: Amsterdam, The Netherlands
-  image: ""
-  summary: Noah Jaffe works across sensing, embedded systems, measurement, and historical keyboard instruments. His background combines hardware engineering, computational analysis, and instrument-centered research, with a focus on building systems that make complex physical behavior measurable, interpretable, and usable in performance.
-
   sections:
+    Experience:
+      # KLAV-1, KLAV-2, KLAV-3, KLAV-4, KLAV-6, KLAV-9, KLAV-13, KLAV-16, PUB-2
+      - company: klavecimbel.com
+        position: Founder & Engineer
+        location: Amsterdam
+        start_date: 2024
+        end_date: Present
+        highlights:
+          - "Designed and built PHOTON, an optical sensing retrofit that tracks key-lever motion in acoustic keyboard instruments and outputs MIDI: schematic, PCB layout, component selection, and embedded firmware, on externally fabricated and SMT-assembled boards."
+          - "Validated it through multiple hardware prototypes against performance targets. Published at NIME 2026; the hardware design and firmware are [public](https://github.com/w4iei/photon)."
+          - "Designed the boards for manufacture: chose parts to keep the assembler's loader fees down and components available for future revisions, and chose footprints that reduce assembly risk and improve yield."
+          - "Built bring-up tooling that time-aligns a board's current draw with its serial log, so a current spike leads straight to the log line printed at that moment."
+          - "Trained a model that recognises keyboard instruments from audio and runs in real time on an RP2350 microcontroller with PDM microphones."
+          - "[Built a Raspberry Pi-based Pianoteq retrofit that gives existing MIDI keyboards historical keyboard sounds](/assets/pdf/H_F__Portable_Harpsichord_preprint.pdf)."
+
+      # APPLE-1, APPLE-3, APPLE-9, APPLE-10, APPLE-11, APPLE-14, APPLE-16, APPLE-18,
+      # APPLE-19, APPLE-20, APPLE-24, APPLE-25
+      - company: Apple Inc.
+        position: Hardware and Software Engineer, Wireless Hardware Engineering
+        location: Cupertino, California
+        start_date: 2013
+        end_date: 2020
+        summary: iPhone sub-6 GHz cellular RF front end
+        highlights:
+          - "Built the RF test setups, not only the software that drove them: specified the duplexers, diplexers, and switching in the RF path, and developed the calibration standards and the calibration software that applied them."
+          - "Validated the iPhone RF front-end design against worldwide carrier requirements before the first prototype was built, with a modelling system of the complete front end (PAs, switches, duplexers, LNAs) whose configuration profiles went into production firmware."
+          - "Measured vendors' prototype front-end parts, typically two or three candidates per socket; the team chose between them on that data."
+          - "Centralised the team's baseline testing: up to eight devices under test at once, feeding a performance dashboard that routed each flagged issue to the engineer responsible, for a team of about ten."
+          - "Wrote the software for the RF test environment, including tests that evaluate device performance against 3GPP specifications."
+          - "Performed system-level PA verification on envelope-tracking systems with digital pre-distortion, including ACLR and SEM measurements."
+          - "Brought up new prototype hardware at the lab station for flashing and calibrating boards, and root-caused issues on site in the factory's failure analysis room."
+
+      # APPLE-8, APPLE-21
+      - company: Apple Inc.
+        position: Wireless Hardware Engineering Intern
+        location: Cupertino, California
+        start_date: 2012
+        end_date: 2012
+        highlights:
+          - "Wrote factory test software that automated antenna-validation measurements across antenna configurations, on the factory floor."
+          - "Built the macOS production-test application in Objective-C: test control, data collection, and pass/fail reporting."
+
+      # RIM-1, RIM-2, RIM-3, RIM-4, SKILL-18
+      - company: Research In Motion (BlackBerry)
+        position: Wireless Hardware Engineering Intern
+        location: Sunrise, Florida
+        start_date: 2011
+        end_date: 2011
+        highlights:
+          - "Ran radiated receiver sensitivity and desense testing on GSM/WCDMA devices, tracing degradation to EMI and digital noise coupling."
+          - "Implemented the mitigations: drive-strength tuning, shielding and grounding changes, and board-level rework of matching networks down to 0201 components."
+
+    Skills:
+      # APPLE-12, APPLE-13, SKILL-1, SKILL-6, SKILL-7, SKILL-11 (Gerber/BoM),
+      # SKILL-15, SKILL-16, SKILL-19, KLAV-15; familiarity line per EQUIV Tier 2: SKILL-2, SKILL-8
+      - name: Test and measurement
+        keywords:
+          - Rohde & Schwarz CMW500 callbox
+          - spectrum analyzers
+          - signal generators
+          - power meters
+          - vector network analyzers
+          - shielded chambers
+
+      - name: Hardware design
+        keywords:
+          - KiCad schematic and PCB
+          - Gerber and BoM output
+          - SPI
+          - I2C
+          - hand soldering
+
+      - name: Software
+        keywords:
+          - Python (test automation, data analysis)
+          - CircuitPython
+          - C/C++ (working knowledge)
+          - Git
+          - automated tests and CI
+          - Linux
+          - Docker
+
+      # APPLE-5, APPLE-20 (RF performance dashboard), KLAV-12, KLAV-13 (bring-up and sensor dashboards)
+      - name: Data visualisation
+        keywords:
+          - dashboards that make engineering data clear and actionable
+
+      - name: Familiar with
+        keywords:
+          - MATLAB
+          - LTspice
+
     Education:
+      # EDU-4. Website only: Noah removed the POSITION-8 explanation here on 2026-10-16.
+      # Sent CVs and letters still carry it.
       - institution: University of Amsterdam, Institute for Logic, Language and Computation (ILLC)
         location: Amsterdam
-        area: Computational Musicology
-        studyType: Ph.D. (in progress)
+        area: Computational Analysis of Historically Informed Keyboard Performance
+        studyType: Ph.D.
         start_date: 2024
-        end_date: 2028
-        highlights:
-          - Research on historical keyboard performance and the development of non-invasive sensing systems for harpsichords and early pianos.
+        end_date: Present
 
+      # EDU-3
       - institution: University of Amsterdam
         location: Amsterdam
-        area: Musicology
+        area: Artificial Intelligence
+        studyType: Coursework
+        start_date: 2022
+        end_date: 2023
+
+      # EDU-2
+      - institution: University of Amsterdam
+        location: Amsterdam
+        area: "Musicology. Thesis: Musical Source Separation: WSDR—Lending Weight to SDR"
         studyType: M.A.
         start_date: 2021
         end_date: 2022
-        highlights:
-          - "Thesis: *Musical Source Separation: WSDR---Lending Weight to SDR*"
 
+      # EDU-1
       - institution: Georgia Institute of Technology
         location: Atlanta, Georgia
         area: Electrical Engineering
@@ -32,102 +134,19 @@ cv:
         start_date: 2009
         end_date: 2013
 
-    Experience:
-      - company: Institute for Logic, Language and Computation (ILLC), University of Amsterdam
-        position: PhD Researcher
-        location: Amsterdam
-        start_date: 2024
-        end_date: Present
-        summary: Researches historical keyboard performance and develops non-invasive sensing systems for harpsichords and early pianos.
-        highlights:
-          - "Developed **PHOTON**, a modular optical sensing platform for high-resolution performance capture in research and concert settings."
-
-      - company: klavecimbel.com
-        position: Founder & Engineer
-        location: Amsterdam
-        start_date: 2024
-        end_date: Present
-        summary: Develops software and hardware systems for historical keyboard instruments.
-        highlights:
-          - Built a Raspberry Pi-based Pianoteq retrofit for modern MIDI keyboards oriented toward historically informed keyboard performance.
-          - Designed the PHOTON retrofit for acoustic historical keyboard instruments, including optical sensing hardware, custom PCBs, and embedded systems for performance capture and MIDI output.
-
-      - company: Stichting Tijdloze Klavieren
-        position: Executive & Artistic Director
-        location: Amsterdam
-        start_date: 2024
-        end_date: Present
-        summary: Directs a foundation focused on historically informed keyboard performance and instrument-centered concert programming.
-        highlights:
-          - Leads artistic programming, collaborations, fundraising, and the development of new performance formats for harpsichord and fortepiano.
-          - Built and maintains AmsterdamEarlyMusic.com, a public calendar and submission platform for Amsterdam's early music scene.
-
-      - company: Apple Inc.
-        position: Hardware and Software Engineer, Wireless Hardware Engineering
-        location: Cupertino, California
-        start_date: 2013
-        end_date: 2020
-        summary: Worked on iPhone RF front-end systems and the Python-based tooling used to model, validate, and debug them from prototyping through production bring-up.
-        highlights:
-          - Developed Python test and analysis infrastructure for RF characterization and production validation, including instrument control, calibration, and automated measurement workflows.
-          - Built models of the iPhone RF front end to generate firmware configuration profiles and support system-level validation.
-          - Led bench debugging during prototyping and factory bring-up, tracing performance issues across hardware, measurement setups, and production test flows.
-
-      - company: Apple Inc.
-        position: Wireless Hardware Engineering Intern
-        location: Cupertino, California
-        start_date: 2012
-        end_date: 2012
-        highlights:
-          - Developed factory test software for antenna validation using vector network analyzers (VNAs) and automated measurement workflows.
-          - Built a macOS Cocoa application in Objective-C for production test control, data collection, and pass/fail reporting in manufacturing environments.
-
-      - company: Research In Motion (BlackBerry)
-        position: Wireless Hardware Engineering Intern
-        location: Sunrise, Florida
-        start_date: 2011
-        end_date: 2011
-        highlights:
-          - Performed receiver sensitivity and desense testing for GSM/WCDMA devices, investigating RF performance degradation due to EMI and digital noise coupling.
-          - Implemented mitigations via drive-strength tuning, shielding and grounding changes, and board-level coupling investigations.
-
     Publications:
-      - title: "Musical Source Separation Bake-Off: Comparing Objective Metrics with Human Perception"
-        publisher: Proceedings of the IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)
-        releaseDate: 2025-11-14
-        url: https://arxiv.org/abs/2507.06917
+      # PUB-1, PUB-2, PHD-2 (corrected 2026-10-07). One pointer instead of a copy of the
+      # Publications page, which carries the full entries, PDFs, and BibTeX.
+      - summary: "Papers, PDFs, and BibTeX are on the [Publications](/publications/) page."
 
-      - title: "PHOTON: Non-Invasive Optical Tracking of Key-Lever Motion in Historical Keyboard Instruments"
-        publisher: Proceedings of the International Conference on New Interfaces for Musical Expression, pp. 722-729
-        releaseDate: "2026-06"
-        url: https://nime.org/proc/nime2026_85/index.html
+    Languages:
+      # LOG-4
+      - name: English
+        summary: native
+      - name: Dutch
+        summary: B1, improving; used daily
 
-      - title: "The Portable Harpsichord: Past and Present"
-        publisher: "Harpsichord & fortepiano Magazine, Spring 2026, Vol. 30, No. 2, pp. 12-16"
-        releaseDate: 2026
-        url: https://noahjaffe.org/assets/pdf/H_F__Portable_Harpsichord_preprint.pdf
-
-    Skills:
-      - name: RF and hardware systems
-        keywords:
-          - RF systems debugging
-          - bench characterization
-          - factory bring-up
-
-      - name: Software and analysis
-        keywords:
-          - Python-based test automation
-          - analytics tooling
-          - data visualization
-
-      - name: Embedded systems
-        keywords:
-          - RFFE configuration modeling
-          - firmware integration workflows
-          - custom sensor boards and PCBs
-
-      - name: Research instruments
-        keywords:
-          - historical keyboard instrument sensing systems
-          - research prototyping
-          - multimodal performance data
+    Concert Production:
+      # STK-1, STK-2, STK-7, STK-14. Kept off engineering PDFs (POSITION-4); on the
+      # website it sits last, one line, pointing at the Concerts page.
+      - bullet: "Executive and artistic director of [Stichting Tijdloze Klavieren](/productions/) since 2024, producing historical keyboard concerts at Het Concertgebouw Amsterdam. Built and runs [AmsterdamEarlyMusic.com](https://amsterdamearlymusic.com), a public calendar of early music in Amsterdam."

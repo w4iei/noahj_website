@@ -16,7 +16,7 @@
       {% capture fluency %}
         {% if entry.summary %}{{ entry.summary }}{% elsif entry.fluency %}{{ entry.fluency }}{% endif %}
       {% endcapture %}
-      <strong>{{ lang_name }}:</strong> {{ fluency }}
+      <strong>{{ lang_name | strip }}:</strong> {{ fluency | strip }}
     </div>
   {% endfor %}
 </div>
