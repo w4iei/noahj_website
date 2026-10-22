@@ -2,9 +2,9 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Hardware, test tooling, and research I have built, with the code and papers where they are public.
+description: Hardware, software, and research I have built, with the code, papers, and demos where they are public.
 nav: true
-nav_order: 2
+nav_order: 4
 display_categories:
 horizontal: false
 ---

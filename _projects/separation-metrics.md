@@ -2,7 +2,7 @@
 layout: page
 title: Do separation metrics match what listeners hear?
 description: A listening study testing how well objective metrics such as SDR predict human ratings of musical source separation. WASPAA 2025.
-importance: 4
+importance: 5
 ---
 
 <!-- FACTS: PUB-1, PHD-6. -->

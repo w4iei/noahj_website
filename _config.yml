@@ -214,13 +214,13 @@ exclude:
   - _pages/dropdown.md
   - _pages/news.md
   - _pages/profiles.md
-  - _pages/projects.md
   - _pages/repositories.md
   - _pages/teaching.md
   - _books/
   - _news/
   - _posts/
-  - _projects/
+  - _projects/instrument-classifier.md
+  - _projects/separation-metrics.md
   - _teachings/
   - purgecss.config.js
   - README.md
