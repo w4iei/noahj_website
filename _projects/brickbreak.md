@@ -4,12 +4,13 @@ title: Brick Breaker × Stable Audio
 description: A DJ's track, reshaped into a new mood with every hit, on the beat. Built at the ADE 2026 hackathon.
 img: assets/img/projects/brickbreak.jpg
 importance: 2
+github: https://github.com/w4iei/brickbreak-stability
 ---
 
 <!-- FACTS: Noah's project write-up, 2026-10-22. "Live" is used only for the DJ goal: the public
      site plays pre-rendered audio. The hackathon line credits the model, not a sponsor. -->
 
-**▶ [Play it: klavecimbel.com/brickbreak](https://klavecimbel.com/brickbreak)**
+**▶ [Play it: klavecimbel.com/brickbreak](https://klavecimbel.com/brickbreak) · [Code on GitHub](https://github.com/w4iei/brickbreak-stability)**
 
 Most AI music generates new songs.
 This keeps the artist's track and changes only the feeling: a first step toward a tool for DJs to steer a crowd's mood live.
