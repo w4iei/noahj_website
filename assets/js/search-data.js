@@ -47,11 +47,16 @@ ninja.data = [{
           description: "Thousands of early music concerts in churches and halls in more than 40 countries, in one guide.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/early-music-concerts/";
-            },},{id: "projects-marcussen-organ-comparison",
-          title: 'Marcussen organ comparison',
+            },},{id: "projects-computer-audition-hearing-organ-pipes-like-an-expert",
+          title: 'Computer audition: hearing organ pipes like an expert',
           description: "A listening dashboard that tests which audio models hear organ pipes the way an expert does.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/marcussen/";
+            },},{id: "projects-photon-micro",
+          title: 'PHOTON Micro',
+          description: "A real-time historical keyboard classifier. Piano, organ, harpsichord, and clavichord from microphone audio, on a microcontroller.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/photon-micro/";
             },},{id: "projects-photon",
           title: 'PHOTON',
           description: "Optical key-lever tracking for historical keyboard instruments. Peer-reviewed at NIME 2026; hardware and firmware are open source.",
