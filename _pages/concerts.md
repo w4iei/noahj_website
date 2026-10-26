@@ -14,7 +14,7 @@ nav_order: 3
 Stichting Tijdloze Klavieren produces concerts centered on historical keyboard instruments.
 See [AmsterdamEarlyMusic.com](https://earlymusicconcerts.com/productions/).
 
-#### [Duo Pleyel: From Muffat to Beethoven](https://www.concertgebouw.nl/en/concerts/45947064-from-muffat-to-beethoven-richard-egarr-and-alexandra-nepomnyashchaya?utm_source=earlymusicconcerts&utm_medium=referral&utm_campaign=agenda)
+#### [Duo Pleyel: from Muffat to Beethoven](https://www.concertgebouw.nl/en/concerts/45947064-from-muffat-to-beethoven-richard-egarr-and-alexandra-nepomnyashchaya?utm_source=earlymusicconcerts&utm_medium=referral&utm_campaign=agenda)
 
 January 20th, 2027, Het Concertgebouw Amsterdam (Kleine Zaal)  
 Richard Egarr and Alexandra Nepomnyashchaya, harpsichord and 1848 Pleyel piano. Before recordings existed, four-hand piano arrangements brought orchestral music into the home. Works by Händel, J.C. Bach, and Mozart, and Beethoven's Sixth Symphony in Czerny's arrangement for piano four hands.

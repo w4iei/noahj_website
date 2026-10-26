@@ -16,7 +16,7 @@ Most AI music generates new songs.
 This keeps the artist's track and changes only the feeling: a first step toward a tool for DJs to steer a crowd's mood live.
 
 Each brick is an emotion.
-When the ball hits one, Yana Kunakbaeva's techno track "ATARI 3.0" switches to a version reshaped toward that emotion, landing on the next beat.
+When the ball hits one, [Yana Kunakbaeva](https://soundcloud.com/kunakbaeva)'s techno track "ATARI 3.0" switches to a version reshaped toward that emotion, landing on the next beat.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 col-md-5 mt-3 mt-md-0">
@@ -24,7 +24,7 @@ When the ball hits one, Yana Kunakbaeva's techno track "ATARI 3.0" switches to a
     </div>
 </div>
 <div class="caption">
-    ADE 2026 hackathon · Music by Yana Kunakbaeva · Stability AI’s Stable Audio 3
+    ADE 2026 hackathon · Music by <a href="https://soundcloud.com/kunakbaeva">Yana Kunakbaeva</a> · Stability AI’s Stable Audio 3
 </div>
 
 <script>

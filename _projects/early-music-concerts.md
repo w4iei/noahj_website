@@ -11,11 +11,15 @@ importance: 4
      4,459 upcoming early-music concerts, 464 venues, 44 countries (Amsterdam: 174 local, 166+ on the live
      page). The Amsterdam "half outside the big halls" line in purpose.md does not hold for upcoming concerts
      (116 of 174 are at the Concertgebouw or Muziekgebouw), so it is not used.
-     The "Internal strategic notes" in purpose.md are not for publication. -->
+     The "Internal strategic notes" in purpose.md are not for publication.
+     Charity project of Stichting Tijdloze Klavieren: Noah, 2026-10-26; "Dutch non-profit foundation" is how
+     earlymusicconcerts.com/about-project/ puts it (read 2026-10-26). -->
 
 **→ [Find a concert near you: earlymusicconcerts.com](https://earlymusicconcerts.com)**
 
-Tonight, somewhere, a superb ensemble is playing Bach in a church you have never heard of, and the only announcement is on the parish website.
+Tonight, somewhere, a superb ensemble is playing Bach in a church you have never heard of, and because the ensemble has no press office, the only announcement is on the parish website.
 I built earlymusicconcerts.com to find those concerts: thousands of upcoming performances at hundreds of venues in more than 40 countries, in ten languages.
 You shouldn't need five years in a city to find its best concerts.
 Use it at home and on holiday.
+
+A charity project of [Stichting Tijdloze Klavieren](https://amsterdamearlymusic.com/about/), a Dutch non-profit.

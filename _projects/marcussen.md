@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Marcussen organ comparison
+title: "Computer audition: hearing organ pipes like an expert"
 description: A listening dashboard that tests which audio models hear organ pipes the way an expert does.
 img: assets/img/projects/marcussen.jpg
 importance: 3
