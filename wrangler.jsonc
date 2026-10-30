@@ -1,0 +1,29 @@
+{
+  // noahjaffe.org on Cloudflare Workers: the Jekyll build in _site as static assets, plus
+  // worker/ for the contact form. CONTACT_TO_EMAIL and TURNSTILE_SECRET_KEY are secrets
+  // (wrangler secret put), not vars, so they stay out of this public repo.
+  "name": "noahjaffe-org",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-08-01",
+  "observability": {
+    "enabled": true,
+  },
+  "assets": {
+    "directory": "_site",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    // Every request reaches the Worker first, so it can send www to the bare domain
+    "run_worker_first": true,
+  },
+  "routes": [
+    { "pattern": "noahjaffe.org", "custom_domain": true },
+    { "pattern": "www.noahjaffe.org", "custom_domain": true },
+  ],
+  // No *.workers.dev address: Chrome flags it as a lookalike of noahjaffe.org
+  "workers_dev": false,
+  "preview_urls": false,
+  "send_email": [{ "name": "EMAIL" }],
+  "vars": {
+    "CONTACT_FROM_EMAIL": "contact@noahjaffe.org",
+  },
+}
