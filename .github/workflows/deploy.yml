@@ -102,13 +102,16 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
-      # Serves _site from the noahjaffe-org Cloudflare Worker (wrangler.jsonc). The Worker's own
-      # secrets (CONTACT_TO_EMAIL, TURNSTILE_SECRET_KEY) persist across deploys.
-      - name: Deploy to Cloudflare 🚀
+      # Cloudflare's build image has no ImageMagick, so GitHub builds the site and pushes the result,
+      # with the Worker and its config, to the gh-pages branch. Cloudflare Workers Builds is
+      # connected to gh-pages and only runs `npx wrangler deploy` there.
+      - name: Package for Cloudflare 📦
+        run: |
+          mkdir deploy
+          mv _site deploy/_site
+          cp -r worker wrangler.jsonc deploy/
+      - name: Deploy 🚀
         if: github.event_name != 'pull_request'
-        uses: cloudflare/wrangler-action@v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          wranglerVersion: "4.125.0"
-          command: deploy
+          folder: deploy
