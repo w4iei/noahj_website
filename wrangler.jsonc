@@ -6,16 +6,24 @@
   "main": "worker/index.ts",
   "compatibility_date": "2026-08-01",
   "observability": {
-    "enabled": true
+    "enabled": true,
   },
   "assets": {
     "directory": "_site",
     "binding": "ASSETS",
     "not_found_handling": "404-page",
-    "run_worker_first": ["/api/*"]
+    // Every request reaches the Worker first, so it can send www to the bare domain
+    "run_worker_first": true,
   },
+  "routes": [
+    { "pattern": "noahjaffe.org", "custom_domain": true },
+    { "pattern": "www.noahjaffe.org", "custom_domain": true },
+  ],
+  // No *.workers.dev address: Chrome flags it as a lookalike of noahjaffe.org
+  "workers_dev": false,
+  "preview_urls": false,
   "send_email": [{ "name": "EMAIL" }],
   "vars": {
-    "CONTACT_FROM_EMAIL": "contact@noahjaffe.org"
-  }
+    "CONTACT_FROM_EMAIL": "contact@noahjaffe.org",
+  },
 }
