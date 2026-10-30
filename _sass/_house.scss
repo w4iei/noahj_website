@@ -1,0 +1,484 @@
+/*******************************************************************************
+ * House style, taken from earlymusicconcerts.com
+ *
+ * Dark green band, Playfair Display titles in dark teal, Inter for text,
+ * hairline rows instead of cards, outlined chips and ghost buttons.
+ * Loaded last in main.scss so it wins over the al-folio partials and MDB.
+ ******************************************************************************/
+
+@use "variables" as v;
+
+$font-heading: "Playfair Display", Georgia, serif;
+$font-body:
+  Inter,
+  system-ui,
+  -apple-system,
+  "Segoe UI",
+  Roboto,
+  sans-serif;
+$band-height: 60px;
+
+// Type
+
+body {
+  font-family: $font-body;
+  font-weight: 400;
+  line-height: 1.625;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// MDB and the theme ask for weight 300 in several places; Inter is loaded from 400.
+.font-weight-light,
+.font-weight-lighter {
+  font-weight: 400 !important;
+}
+
+h1,
+h2,
+h3,
+.post-title,
+.card-title {
+  font-family: $font-heading;
+  font-weight: 700;
+  color: var(--global-theme-color);
+  letter-spacing: 0;
+}
+
+h4,
+h5,
+h6 {
+  font-family: $font-body;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.45;
+}
+
+.post-header {
+  margin-bottom: 1.5rem;
+
+  .post-title {
+    font-size: 2.5rem;
+    line-height: 1.125;
+    margin-bottom: 0.5rem;
+    overflow-wrap: anywhere;
+  }
+
+  .desc,
+  .post-description {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--global-text-color-light);
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .post-header .post-title {
+    font-size: 2rem;
+  }
+
+  .post-header .desc,
+  .post-header .post-description {
+    font-size: 1rem;
+  }
+}
+
+a:hover {
+  color: var(--global-hover-color);
+}
+
+hr {
+  border-top-color: var(--global-divider-color);
+}
+
+// Navbar: the band
+
+.navbar {
+  min-height: $band-height;
+  background-color: v.$house-band;
+  border-bottom: 0;
+  opacity: 1;
+}
+
+body.fixed-top-nav {
+  padding-top: $band-height;
+}
+
+.navbar.navbar-light {
+  .navbar-brand,
+  .navbar-brand.title {
+    font-family: $font-heading;
+    font-weight: 700 !important;
+    font-size: 1.375rem;
+    // Keeps the band at 60px on pages that show the name
+    line-height: 1.5;
+    color: v.$white-color;
+
+    &:hover {
+      color: v.$white-color;
+    }
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    color: rgba(255, 255, 255, 0.82);
+    font-weight: 500;
+
+    &:hover {
+      color: v.$white-color;
+    }
+  }
+
+  .navbar-nav .nav-item.active > .nav-link {
+    color: v.$white-color;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.45em;
+
+    &:hover {
+      color: v.$white-color;
+    }
+  }
+
+  .navbar-brand.social a i::before {
+    color: v.$white-color;
+  }
+}
+
+.navbar-toggler {
+  padding: 0.5rem 0.25rem;
+
+  .icon-bar {
+    background-color: v.$white-color;
+  }
+
+  &:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.6);
+    outline-offset: 2px;
+  }
+}
+
+#light-toggle,
+#search-toggle {
+  color: v.$white-color;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.82);
+  }
+}
+
+// Phone menu: stacked links inside the band, with hairlines between them.
+@media (max-width: 575.98px) {
+  .navbar .navbar-collapse {
+    text-align: left !important;
+    padding-bottom: 0.5rem;
+  }
+
+  .navbar.navbar-light .navbar-nav .nav-item .nav-link {
+    padding: 0.75rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+}
+
+// Footer
+
+footer.fixed-bottom,
+footer.sticky-bottom {
+  font-size: 0.8125rem;
+}
+
+// Images: no shadows, a hairline edge instead
+
+.z-depth-1,
+.z-depth-2,
+.hoverable,
+.hoverable:hover {
+  box-shadow: none !important;
+}
+
+img.z-depth-1,
+.profile img {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px !important;
+}
+
+// Ghost buttons, as EMC's "Details"
+
+.publications ol.bibliography li .links a.btn,
+a.btncv {
+  font-family: $font-body;
+  font-size: 0.8125rem !important;
+  line-height: 1.125rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--global-theme-color) !important;
+  background-color: rgba(v.$house-teal, 0.08);
+  border: 1px solid rgba(v.$house-teal, 0.3) !important;
+  border-radius: 6px;
+  box-shadow: none;
+  padding: 0.25rem 0.75rem;
+  margin: 0 0.375rem 0.375rem 0;
+
+  &:hover,
+  &:focus {
+    color: var(--global-theme-color) !important;
+    background-color: rgba(v.$house-teal, 0.16);
+    border-color: rgba(v.$house-teal, 0.55) !important;
+    box-shadow: none;
+  }
+}
+
+// Publications: year as a section title, hairline rows
+
+.publications {
+  h2.bibliography {
+    font-family: $font-heading;
+    font-size: 1.375rem;
+    line-height: 1.75rem;
+    color: var(--global-theme-color);
+    text-align: left;
+    font-variant-numeric: tabular-nums lining-nums;
+    border-top: 1px solid var(--global-divider-color);
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  ol.bibliography {
+    li {
+      padding: 1rem 0;
+      margin-bottom: 0;
+      border-bottom: 1px solid var(--global-divider-color);
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      .title {
+        font-size: 1.0625rem;
+        line-height: 1.5;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+      }
+
+      .author,
+      .periodical {
+        line-height: 1.55;
+      }
+
+      .periodical {
+        color: var(--global-text-color-light);
+      }
+
+      .links {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
+
+// CV: sections as plain blocks, dates as stamps, nothing under 13px
+
+.cv {
+  .card {
+    border: 0;
+    box-shadow: none;
+    background-color: transparent;
+    // Sections come as .card.mt-3.p-3; line them up with the page title
+    padding: 0 !important;
+    margin-top: 2.5rem !important;
+
+    .card-title {
+      font-size: 1.5rem;
+      color: var(--global-theme-color);
+      border-bottom: 1px solid var(--global-divider-color);
+      padding-bottom: 0.75rem;
+      margin-bottom: 0;
+    }
+
+    .list-group-item {
+      padding-left: 0;
+      padding-right: 0;
+      border-left: 0;
+      border-right: 0;
+
+      &:first-child {
+        border-top: 0;
+      }
+
+      .badge {
+        font-family: $font-body;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 700;
+        text-transform: none !important;
+        font-variant-numeric: tabular-nums;
+        white-space: normal;
+        color: var(--global-theme-color) !important;
+        background-color: transparent !important;
+        box-shadow: none;
+        padding: 0;
+        min-width: 0 !important;
+      }
+    }
+  }
+}
+
+// Date column: a fixed-width left rail instead of al-folio's centred 75px box,
+// so long locations wrap inside it rather than running into the entry.
+.cv .list-group-item > .row {
+  flex-wrap: nowrap;
+
+  > .date-column {
+    flex: 0 0 9rem;
+    max-width: 9rem;
+    width: auto;
+    transform: none;
+    text-align: left !important;
+
+    table.table-cv td {
+      padding: 0;
+    }
+
+    .badge {
+      white-space: nowrap;
+    }
+
+    p.location {
+      display: flex;
+      gap: 0.375rem;
+      white-space: normal;
+      margin: 0.25rem 0 0;
+      line-height: 1.3;
+      color: var(--global-text-color-light);
+
+      i.iconlocation {
+        flex: none;
+        margin-top: 0.125rem;
+      }
+    }
+  }
+
+  > .date-column + div {
+    flex: 1 1 0%;
+    max-width: none;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cv .list-group-item > .row {
+    flex-wrap: wrap;
+
+    > .date-column,
+    > .date-column + div {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    > .date-column table.table-cv tr {
+      display: inline-block;
+      margin-right: 0.75rem;
+      vertical-align: baseline;
+    }
+  }
+}
+
+p.location,
+td.department,
+td.list-group-name,
+td.list-group-level,
+td.list-group-school,
+td.list-group-category-icon {
+  font-size: 0.8125rem;
+}
+
+i.iconlocation {
+  font-size: 0.8125rem;
+}
+
+// Projects: one hairline row per project, picture left and text right
+
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  border-top: 1px solid var(--global-divider-color);
+
+  > li {
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+}
+
+.project-row {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+  padding: 1.5rem 0;
+  color: var(--global-text-color);
+
+  &:hover {
+    text-decoration: none;
+
+    h2 {
+      color: var(--global-hover-color);
+    }
+  }
+
+  // No picture: keep the text in the text column, in line with the other rows
+  &.no-image .project-text {
+    grid-column: 2;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  .project-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+    object-position: center top;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 6px;
+  }
+
+  h2 {
+    font-size: 1.375rem;
+    line-height: 1.3;
+    margin: 0 0 0.375rem;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .project-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+
+    &.no-image .project-text {
+      grid-column: 1;
+    }
+  }
+}

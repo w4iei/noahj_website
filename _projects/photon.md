@@ -2,7 +2,7 @@
 layout: page
 title: PHOTON
 description: Optical key-lever tracking for historical keyboard instruments. Peer-reviewed at NIME 2026; hardware and firmware are open source.
-img: assets/img/projects/photon_manual.jpg
+img: assets/img/projects/photon_card.jpg
 importance: 1
 github: https://github.com/w4iei/photon
 ---

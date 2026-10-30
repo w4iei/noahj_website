@@ -24,6 +24,22 @@ $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;
 $yellow-color: #efcc00 !default;
 
+// House style, taken from earlymusicconcerts.com
+$house-band: #263834 !default;
+$house-heading: #134e4a !default;
+$house-teal: #0d9488 !default;
+$house-tint: #f0fdfa !default;
+$house-ink: #1a1a1a !default;
+$house-muted: #52525b !default;
+$house-rule: #d4d4d8 !default;
+$house-band-dark: #2c4a44 !default;
+$house-heading-dark: #8fd3c8 !default;
+$house-teal-dark: #1f9e8f !default;
+$house-ink-dark: #e7ecea !default;
+$house-muted-dark: #a3ada9 !default;
+$house-rule-dark: #2a3532 !default;
+$house-paper-dark: #111816 !default;
+
 $grey-color: #828282 !default;
 $grey-color-light: color.adjust($grey-color, $lightness: 40%);
 $grey-color-dark: #1c1c1d;
@@ -34,7 +50,7 @@ $black-color: #000000 !default;
 
 // Theme colors
 
-$code-bg-color-light: rgba($purple-color, 0.05);
+$code-bg-color-light: rgba($house-teal, 0.06);
 $code-bg-color-dark: #2c3237 !default;
 
 // Font awesome location

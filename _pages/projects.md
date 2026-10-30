@@ -5,61 +5,24 @@ permalink: /projects/
 description: Hardware, software, and research I have built, with the code, papers, and demos where they are public.
 nav: true
 nav_order: 4
-display_categories:
-horizontal: false
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
-
-{% else %}
-
-<!-- Display projects without categories -->
+<!-- pages/projects.md: one hairline row per project, ordered by importance -->
 
 {% assign sorted_projects = site.projects | sort: "importance" %}
 
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
-</div>
+<ul class="project-list">
+  {% for project in sorted_projects %}
+    <li>
+      <a class="project-row{% unless project.img %} no-image{% endunless %}" href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
+        {% if project.img %}
+          {% include figure.liquid loading="lazy" path=project.img sizes="(min-width: 576px) 280px, 100vw" alt="" class="project-image" %}
+        {% endif %}
+        <div class="project-text">
+          <h2>{{ project.title }}</h2>
+          <p>{{ project.description }}</p>
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
