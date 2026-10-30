@@ -17,6 +17,11 @@ $font-body:
   Roboto,
   sans-serif;
 $band-height: 60px;
+// Muted whites on the band, as solid colours: the production minifier turns
+// rgba(255, 255, 255, a) into an invalid hsla() that browsers drop.
+$on-band-muted: #d8dbda;
+$on-band-focus: #a8afae;
+$on-band-rule: #40504c;
 
 // Type
 
@@ -134,7 +139,7 @@ body.fixed-top-nav {
   }
 
   .navbar-nav .nav-item .nav-link {
-    color: rgba(255, 255, 255, 0.82);
+    color: $on-band-muted;
     font-weight: 500;
 
     &:hover {
@@ -167,7 +172,7 @@ body.fixed-top-nav {
   }
 
   &:focus {
-    outline: 2px solid rgba(255, 255, 255, 0.6);
+    outline: 2px solid $on-band-focus;
     outline-offset: 2px;
   }
 }
@@ -177,7 +182,7 @@ body.fixed-top-nav {
   color: v.$white-color;
 
   &:hover {
-    color: rgba(255, 255, 255, 0.82);
+    color: $on-band-muted;
   }
 }
 
@@ -190,7 +195,7 @@ body.fixed-top-nav {
 
   .navbar.navbar-light .navbar-nav .nav-item .nav-link {
     padding: 0.75rem 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    border-top: 1px solid $on-band-rule;
   }
 }
 
