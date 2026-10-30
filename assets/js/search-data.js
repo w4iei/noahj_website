@@ -54,7 +54,7 @@ ninja.data = [{
               window.location.href = "/projects/marcussen/";
             },},{id: "projects-photon-micro",
           title: 'PHOTON Micro',
-          description: "A real-time historical keyboard classifier. Piano, organ, harpsichord, and clavichord from microphone audio, on a microcontroller.",
+          description: "A deep-learning model, small enough for a microcontroller, that hears which keyboard instrument is playing.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/photon-micro/";
             },},{id: "projects-photon",
