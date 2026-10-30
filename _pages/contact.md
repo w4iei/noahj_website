@@ -39,14 +39,15 @@ nav_order: 5
     const status = new URLSearchParams(window.location.search).get("status");
     const box = document.getElementById("contact-status");
     const messages = {
-      sent: ["Thank you, your message was sent.", "success"],
-      verification_failed: ["The spam check failed. Please try again.", "error"],
-      invalid_submission: ["Please fill in every field and try again.", "error"],
-      send_failed: ["The message could not be sent right now. Please try again later.", "error"],
+      sent: ["Thank you, your message was sent.", "contact-status--success"],
+      verification_failed: ["The spam check failed. Please try again.", "contact-status--error"],
+      invalid_submission: ["Please fill in every field and try again.", "contact-status--error"],
+      send_failed: ["The message could not be sent right now. Please try again later.", "contact-status--error"],
     };
     if (!status || !box || !messages[status]) return;
     box.textContent = messages[status][0];
-    box.classList.add("contact-status--" + messages[status][1]);
+    // Full class names above, so purgecss keeps their styles
+    box.classList.add(messages[status][1]);
     box.hidden = false;
     window.history.replaceState({}, document.title, window.location.pathname);
   })();
