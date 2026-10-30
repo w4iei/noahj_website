@@ -223,6 +223,9 @@ exclude:
   - _projects/separation-metrics.md
   - _teachings/
   - purgecss.config.js
+  - worker/
+  - wrangler.jsonc
+  - .wrangler/
   - README.md
   - readme_preview/
   - vendor

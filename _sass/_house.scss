@@ -487,3 +487,88 @@ i.iconlocation {
     }
   }
 }
+
+// Contact form: plain fields with hairline borders, one solid button
+
+.contact-form {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 36rem;
+  margin-bottom: 2rem;
+
+  .form-field {
+    display: grid;
+    gap: 0.375rem;
+  }
+
+  label {
+    font-weight: 600;
+    margin: 0;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    font: inherit;
+    color: var(--global-text-color);
+    background-color: var(--global-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 6px;
+    padding: 0.625rem 0.75rem;
+
+    &:focus {
+      outline: 2px solid v.$house-teal;
+      outline-offset: 1px;
+      border-color: v.$house-teal;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 10rem;
+  }
+
+  .cf-turnstile {
+    min-height: 65px;
+  }
+
+  button {
+    justify-self: start;
+    font: inherit;
+    font-weight: 600;
+    color: v.$white-color;
+    background-color: v.$house-heading;
+    border: 0;
+    border-radius: 8px;
+    padding: 0.75rem 1.75rem;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+      background-color: v.$house-band;
+    }
+  }
+}
+
+.contact-honeypot {
+  display: none;
+}
+
+.contact-status {
+  max-width: 36rem;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+
+  &.contact-status--success {
+    color: #1e5a3a;
+    background-color: #e3f1e8;
+    border: 1px solid #b9dcc6;
+  }
+
+  &.contact-status--error {
+    color: #8a2a1e;
+    background-color: #fbe9e6;
+    border: 1px solid #efc4bc;
+  }
+}
