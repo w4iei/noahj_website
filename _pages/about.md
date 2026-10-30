@@ -31,4 +31,4 @@ Within music information retrieval and audio, my work includes source separation
 Before beginning my PhD, I worked at Apple on the iPhone RF Design team and founded an internal classical music concert series for employees.
 
 Through [**Stichting Tijdloze Klavieren**](https://earlymusicconcerts.com/productions/), I produce concerts at Het Concertgebouw and maintain a [calendar of early music events](https://earlymusicconcerts.com).
-I am also available for freelance concert production. For collaborations or projects, reach me at my first name @ noahjaffe.org, or via [**klavecimbel.com**](https://klavecimbel.com).
+I am also available for freelance concert production. For collaborations or projects, use the [contact page](/contact/).
