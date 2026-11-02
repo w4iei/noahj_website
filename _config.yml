@@ -262,6 +262,11 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  # /vincent is a weekly whisky-deals page written by WhiskySeer; not for search engines
+  - scope:
+      path: "vincent"
+    values:
+      sitemap: false
 
 sass:
   style: compressed
