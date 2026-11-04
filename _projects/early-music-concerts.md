@@ -22,4 +22,4 @@ I built earlymusicconcerts.com to find those concerts: thousands of upcoming per
 You shouldn't need five years in a city to find its best concerts.
 Use it at home and on holiday.
 
-A charity project of [Stichting Tijdloze Klavieren](https://amsterdamearlymusic.com/about/), a Dutch non-profit.
+A charity project of [Stichting Tijdloze Klavieren](https://earlymusicconcerts.com/about/), a Dutch non-profit.

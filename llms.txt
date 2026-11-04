@@ -25,5 +25,5 @@ Important associated entities mentioned on the site:
 - Institute for Logic, Language and Computation — https://www.illc.uva.nl/
 - University of Amsterdam — https://www.uva.nl/
 - klavecimbel.com — https://klavecimbel.com
-- AmsterdamEarlyMusic.com — https://amsterdamearlymusic.com
-- Stichting Tijdloze Klavieren — https://amsterdamearlymusic.com
+- EarlyMusicConcerts.com — https://earlymusicconcerts.com
+- Stichting Tijdloze Klavieren — https://earlymusicconcerts.com/about/

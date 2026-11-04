@@ -68,11 +68,11 @@ organizations:
   - id: stichting-tijdloze-klavieren
     type: Organization
     name: Stichting Tijdloze Klavieren
-    url: https://amsterdamearlymusic.com
+    url: https://earlymusicconcerts.com/about/
   - id: amsterdam-early-music
     type: WebSite
-    name: AmsterdamEarlyMusic.com
-    url: https://amsterdamearlymusic.com
+    name: EarlyMusicConcerts.com
+    url: https://earlymusicconcerts.com
   - id: apple
     type: Organization
     name: Apple

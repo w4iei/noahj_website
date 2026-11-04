@@ -9,10 +9,10 @@ nav_order: 3
 
 <hr>
 
-## [Stichting Tijdloze Klavieren](https://amsterdamearlymusic.com/about/)
+## [Stichting Tijdloze Klavieren](https://earlymusicconcerts.com/about/)
 
 Stichting Tijdloze Klavieren produces concerts centered on historical keyboard instruments.
-See [AmsterdamEarlyMusic.com](https://earlymusicconcerts.com/productions/).
+See [EarlyMusicConcerts.com](https://earlymusicconcerts.com/productions/).
 
 #### [Duo Pleyel: from Muffat to Beethoven](https://www.concertgebouw.nl/en/concerts/45947064-from-muffat-to-beethoven-richard-egarr-and-alexandra-nepomnyashchaya?utm_source=earlymusicconcerts&utm_medium=referral&utm_campaign=agenda)
 
