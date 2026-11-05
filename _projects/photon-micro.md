@@ -9,13 +9,14 @@ github: https://github.com/w4iei/PHOTON-Micro
 
 <!-- FACTS: KLAV-16 in the fact bank (Noah, 2026-10-11 to 2026-10-30): deep-learning model, runs entirely on
      an ESP32-S3 or an RP2350, scores about once a second; the pictured Waveshare ESP32-S3-Touch-ePaper-1.54 is
-     his photo. Parameter count, model size, architecture and training data are in KLAV-16 and stay off this
-     page (project pages stay short, his rule). Not on record, so not stated: accuracy. -->
+     his photo. Parameter count is about 67,000, from his own text of 2026-10-26 (Noah asked for it on the page,
+     2026-11-05). Model size, architecture and training data are in KLAV-16 and stay off this page (project
+     pages stay short, his rule). Not on record, so not stated: accuracy. -->
 
 **→ [Code on GitHub](https://github.com/w4iei/PHOTON-Micro)**
 
 Play a piano, organ, harpsichord, or clavichord in the room and PHOTON Micro names it, updating about once a second.
-It runs entirely on the chip, an ESP32-S3 or an RP2350.
+It runs entirely on the chip, an ESP32-S3 or an RP2350, using a neural ensemble of about 67,000 parameters.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
